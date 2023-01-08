@@ -1,0 +1,22 @@
+#CodeTexoHeader {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+}
+
+.codetexo-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#CodeTexoHeader svg {
+    height: 64px;
+    width: auto;
+}
+
+.codetexo-navigation {
+    display: flex;
+    gap: 16px;
+}

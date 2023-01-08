@@ -1,17 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+import Header from './components/Header/Header';
+import Main from './components/Main/Main';
+import Footer from './components/Footer/Footer';
+
+import './index.css';
+
+const header = ReactDOM.createRoot(document.getElementById('CodeTexoHeader'));
+header.render(
   <React.StrictMode>
-    <App />
+    <Header />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const root = ReactDOM.createRoot(document.getElementById('CodeTexoMain'));
+root.render(
+  <React.StrictMode>
+    <Main />
+  </React.StrictMode>
+);
+
+const footer = ReactDOM.createRoot(document.getElementById('CodeTexoFooter'));
+footer.render(
+  <React.StrictMode>
+    <Footer />
+  </React.StrictMode>
+);
